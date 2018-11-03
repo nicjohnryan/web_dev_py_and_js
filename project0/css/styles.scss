@@ -1,0 +1,68 @@
+
+/*5 differnt CSS properties and 5 diff selectors*/
+
+body {
+    text-align: center;
+}
+
+/* nesting and inheritance example here*/
+$margin : 40px;
+$color: lightgray;
+
+%image-background {
+    width: 80%;
+    border: 2px solid $color;
+}
+
+#front-page-yak {
+    @extend %image-background;
+    margin: $margin;
+}
+
+table {
+    th {
+        text-align: center;
+        font-size: 120%;
+        background-color: $color;
+    }
+}
+
+h2 {
+    font-size: 140%;
+}
+
+
+
+.yak-pic {
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-top: 50px;
+}
+
+/*id once and class once*/
+
+#yak-text {
+    text-align: center;
+    font-style: oblique;
+}
+ 
+
+
+/*media query here*/
+
+@media (max-width: 499px) {
+    #yak-image-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
