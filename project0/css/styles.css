@@ -1,9 +1,38 @@
 
 /*5 differnt CSS properties and 5 diff selectors*/
 
+body {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    font-weight: 200%;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+
 /*id once and class once*/
 
+#yak-text {
+    text-align: center;
+    font-style: oblique;
+}
+ 
+.yak-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;    
+}
+
+
 /*media query here*/
+
+
 
 /*one SCSS variable*/
 
