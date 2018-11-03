@@ -14,6 +14,20 @@ h2 {
     font-size: 140%;
 }
 
+th {
+    background-color: lightgray;
+}
+
+.yak-pic {
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-top: 50px;
+}
 
 /*id once and class once*/
 
@@ -22,16 +36,17 @@ h2 {
     font-style: oblique;
 }
  
-.yak-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;    
-}
 
 
 /*media query here*/
 
+@media (max-width: 499px) {
+    #yak-image-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
 
 
 /*one SCSS variable*/
